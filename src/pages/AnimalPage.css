@@ -1,0 +1,126 @@
+.animal-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-duas-colunas {
+  display: flex;
+  gap: 25px;
+}
+
+/* Coluna esquerda (formulário) */
+.coluna-esquerda {
+  flex: 1;
+}
+
+/* Coluna direita (lista) */
+.coluna-direita {
+  width: 420px;
+}
+
+/* Formulário */
+.animal-form {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.animal-form input,
+.animal-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f7f7f7;
+}
+
+.especie-raca-row {
+  display: flex;
+  gap: 10px;
+}
+
+.animal-photo-preview {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-top: 10px;
+  border: 2px solid #e1e1e1;
+}
+
+.animal-form button {
+  background: #3d82f7;
+  border: none;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.animal-form button:hover {
+  background: #2969d4;
+}
+
+/* Lista */
+.animais-list {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.animal-item {
+  background: #eef4ff;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.animal-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.animal-item-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #ffd76b;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+}

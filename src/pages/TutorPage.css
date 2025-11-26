@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #f3f4f7;
+}
+
+.tutor-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tutor-header {
+  background: #4b8bff;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* GRID PRINCIPAL */
+.tutor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* FORMULÁRIO */
+.tutor-form {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tutor-form h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.tutor-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tutor-form input {
+  padding: 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 15px;
+  background: #f8f9fb;
+}
+
+.tutor-form input[type="file"] {
+  background: none;
+  padding: 4px;
+  border: none;
+}
+
+.tutor-form button {
+  padding: 12px;
+  background: #4b8bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* LISTA DE TUTORES */
+.tutor-list {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tutor-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* CARD DO TUTOR */
+.tutor-card {
+  background: #f9fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #eceef2;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.tutor-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+/* INFO */
+.tutor-info {
+  flex: 1;
+}
+
+.tutor-info p {
+  margin-bottom: 4px;
+}
+
+/* BOTÕES */
+.tutor-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #ffd966;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
