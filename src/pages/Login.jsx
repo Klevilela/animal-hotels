@@ -1,21 +1,42 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+
+function logar(email, senha) {
+    // Login fake: só verifica se não são strings vazias
+    if (email.trim() !== "" && senha.trim() !== "") {
+        return true;
+    }
+    return false;
+}
 
 function Login() {
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
+    const [formCredentials, setFormCredentials] = useState({
+        email: "",
+        senha: ""
+    });
+
+    function handleChange(e) {
+        setFormCredentials({
+            ...formCredentials,
+            [e.target.id]: e.target.value
+        });
+    }
 
     const navigate = useNavigate();
 
     function onSubmit(e) {
         e.preventDefault();
 
+        const { email, senha } = formCredentials;
+
         console.log("Email:", email);
         console.log("Senha:", senha);
 
-        // Exemplo de navegação
-        // navigate("/dashboard");
+        if (logar(email, senha)) {
+            navigate('/home', { replace: true });
+        } else {
+            alert('Email ou senha inválidos ou não informados');
+        }
     }
 
     return (
@@ -39,8 +60,8 @@ function Login() {
                                 type="email"
                                 id="email"
                                 className="form-control"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                value={formCredentials.email}
+                                onChange={handleChange}
                                 required
                             />
                         </div>
@@ -53,8 +74,8 @@ function Login() {
                                 type="password"
                                 id="senha"
                                 className="form-control"
-                                value={senha}
-                                onChange={(e) => setSenha(e.target.value)}
+                                value={formCredentials.senha}
+                                onChange={handleChange}
                                 required
                             />
                         </div>
