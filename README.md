@@ -1,3 +1,12 @@
+# Seja bem vindo ao Animals - Hotels
+## Imagens da área de cadastro dos pets
+![Cadastro de pets](src/assets/cadastrar_animal.jpeg)
+
+## Imagens da área de cadastro dos tutores
+![Cadastro de pets](src/assets/cadastrar_tutor.jpeg)
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
