@@ -2,8 +2,8 @@ import CardHome from "../components/UI/CardHome";
 
 function Home() {
     const info_secao = [
-        {route:"/tutores", img_path:"public/images/tutor_pet.jpg", nome_secao:"Tutor"},
-        {route:"/animais", img_path:"public/images/pets.jpg", nome_secao:"Pet"}
+        {route:"/tutores", img_path:"/images/tutor_pet.jpg", nome_secao:"Tutor"},
+        {route:"/animais", img_path:"/images/pets.jpg", nome_secao:"Pet"}
     ];
 
     return (
